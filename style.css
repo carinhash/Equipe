@@ -1,13 +1,21 @@
-*{
+* {
+    padding: 0;
     margin: 0;
-    /* padding: 0; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    
 }
 
+.relato{
+    background-color:#dad7d7 ;
+    transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
 .inicio{
     width: 40px;
     height: 30px;
+    cursor: pointer;
+  
+    
 }
 
 
@@ -28,8 +36,8 @@
     justify-content: space-between;
     padding: 5px;
     position: relative;
-    height: 17px;
-    width: 50px;
+    height: 26px;
+    width: 54px;
     transform: scale(1.5);
 }
 
@@ -47,7 +55,7 @@
 
 
 .checkbox:checked + .label .ball{
-    transform: translateX(33px);
+    transform: translateX(28px);
 }
 
 .fa-moon{
@@ -78,26 +86,32 @@
 
 }
 
+/* -------css relatos atuais ---  */
+
 
 
 #relatosatual {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #303030;
+    background-color: #dad7d7;
+    line-height: 100px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
 }
 
 
 
 #nossacaixaa {
-
+    background-color: #dad7d7;
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    
-    height: 600px;
+    margin-bottom: -7%;
+    height: 100%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 #nossacaixab {
@@ -105,13 +119,19 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    background-color: #dad7d7;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .sobrenos img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 10%;
+    /* box-shadow: 4px 4px 4px #D9531E; */
     margin-bottom: 25px;
+    border: solid 2px #6a0dd7;
+    object-fit: cover;
+
 
 }
 
@@ -123,13 +143,14 @@
 }
 
 .nossotexto {
-    font-size: 21px;
+    font-size: 18px;
 
 }
 
 #relatomiguel {
     margin-top: 10%;
     width: 25%;
+    
 }
 
 #relatoguilherme {
@@ -139,7 +160,7 @@
 }
 
 #relatoluisfelipe {
-    margin-top: 6%;
+    margin-top: 0%;
     width: 25%;
 }
 
@@ -162,12 +183,12 @@
 }
 
 .texto1 p {
-    color: #000000;
+    color: #6a0dd7;
 
 }
 
 .texto2 P {
-    color: hsl(0, 0%, 0%);
+    color: #6a0dd7;
    
 }
 
@@ -194,14 +215,6 @@
 
 /* -------css relatos atuais fim ---  */
 
-
-
-
-
-
-
-
-
 /* ------inicio da responsividade relatos atuais -----  */
 
 
@@ -209,24 +222,24 @@
 
 
     #nossacaixaa {
-        display: flex;
+        /* display: flex; */
+
         justify-content: center;
         text-align: justify;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 190%;
-        margin-top: 205%;
+     
     }
 
-
     #nossacaixab {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         text-align: justify;
         align-items: center;
         flex-direction: column;
         width: 100%;
         padding-top: 10%;
+        background-color: #dad7d7;
     }
 
     p.nossotexto {
@@ -238,6 +251,8 @@
 
     #relatoguilherme {
         margin-top: 90px;
+      
+       
     }
 
     #relatoluisfelipe {
@@ -248,44 +263,35 @@
         margin-top: 100px;
     }
 
-
+    
 
     .sobrenos img {
         width: 150px;
         height: 150px;
         border-radius: 10%;      
-        box-shadow: 4px 4px 4px #D9531E;
+        /* box-shadow: 4px 4px 4px #D9531E; */
         margin-left: -20px;
+        
     }
 
-.relatos_geral{
-   margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 1px;
-    list-style-type: none;
-    gap: 40px;
 }
 
+/* -----fim da responsividade relatos atuais -----  */
 
-}
+/* ------começo do modo escuro dos relatos atuais ------  */
 
 
-/* 
-.dark-theme .escuro{
-    background-color: #000000;
-    
-
-} */
-
-.dark-theme header{
-    background-color: #2e2e2e;
+.dark-theme .relato{
+    background-color:#2e2e2e ;
     transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 
 
-
+.dark-theme header{
+    background-color: #2e2e2e;
+    transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
 .dark-theme #nossacaixaa {
     background-color: #2e2e2e;
@@ -309,4 +315,7 @@
     color: #dad7d7;
     transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
 }
- 
+
+/* .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+} */
